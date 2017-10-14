@@ -22,25 +22,24 @@
         android:id="@+id/btn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/headText"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="22dp"
         android:text="@string/btn1_text"
         tools:textAllCaps="false"
-        android:onClick="onClickNCA"/>
+        android:onClick="onClickNCA"
+        android:layout_below="@+id/headText"
+        android:layout_centerHorizontal="true" />
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btn1"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="13dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Msg..."
+        android:layout_below="@+id/btn1"
         android:layout_alignStart="@+id/btn1"
-        android:layout_alignEnd="@+id/btn1"
-        />
+        android:layout_alignEnd="@+id/btn1" />
 
     <Button
         android:id="@+id/btn2"
@@ -50,36 +49,50 @@
         android:layout_below="@+id/editText"
         android:layout_marginTop="10dp"
         android:layout_alignStart="@+id/editText"
-        android:layout_alignEnd="@+id/editText"
         tools:textAllCaps="false"
         android:onClick="onClickSendMsg"
-        />
+        android:layout_alignEnd="@+id/btn1" />
 
     <Button
         android:id="@+id/btn3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/btn2"
+        android:text="@string/btn3_text"
+        android:layout_marginTop="30dp"
         android:layout_below="@+id/btn2"
-        android:layout_marginTop="24dp"
-        android:text="Button" />
+        tools:textAllCaps="false"
+        android:layout_alignEnd="@+id/textBM"
+        android:layout_alignStart="@+id/textBM"
+        android:onClick="onClickReceiveMsg"/>
+
+    <TextView
+        android:id="@+id/textBM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn3"
+        android:layout_marginTop="20dp"
+        android:text="@string/text_BM"
+        android:layout_alignStart="@+id/btn2"
+        android:layout_alignEnd="@+id/btn2" />
 
     <Button
         android:id="@+id/btn4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/btn3"
-        android:layout_below="@+id/btn3"
-        android:layout_marginTop="22dp"
-        android:text="Button" />
+        android:text="Button"
+        android:layout_alignBottom="@+id/btn5"
+        android:layout_alignStart="@+id/btn5"
+        android:layout_marginBottom="55dp" />
 
     <Button
         android:id="@+id/btn5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/btn4"
-        android:layout_below="@+id/btn4"
-        android:layout_marginTop="19dp"
-        android:text="Button" />
+        android:text="Button"
+        android:layout_marginBottom="13dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
 
 </RelativeLayout>

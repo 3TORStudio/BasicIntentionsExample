@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".NCA" />
-        <activity android:name=".SendMessageActivity"></activity>
+        <activity android:name=".SendMessageActivity" />
+        <activity android:name=".SendBackActivity"></activity>
     </application>
 
 </manifest>

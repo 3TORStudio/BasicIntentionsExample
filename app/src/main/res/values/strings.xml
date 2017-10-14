@@ -4,4 +4,7 @@
     <string name="btn1_text">Open New Common Activity</string>
     <string name="textNCA">Here I am. Your New Common Activity.</string>
     <string name="btn2_text">Send Message</string>
+    <string name="btn3_text">Receive Message</string>
+    <string name="text_BM">I'm waiting for new message</string>
+    <string name="btn_send">Send Back</string>
 </resources>
