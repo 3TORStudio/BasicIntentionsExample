@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">3TORStudio</string>
+    <string name="head_text">Intent Examples:</string>
+    <string name="btn1_text">Open New Common Activity</string>
+    <string name="textNCA">Here I am. Your New Common Activity.</string>
+    <string name="btn2_text">Send Message</string>
+</resources>

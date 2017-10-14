@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.a3torstudio.intentionex.MainActivity">
+
+    <TextView
+        android:id="@+id/headText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="@string/head_text"
+        android:textIsSelectable="false"
+        android:textStyle="bold"
+        tools:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="@string/btn1_text"
+        tools:textAllCaps="false"
+        android:onClick="onClickNCA"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn1"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Msg..."
+        android:layout_alignStart="@+id/btn1"
+        android:layout_alignEnd="@+id/btn1"
+        />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn2_text"
+        android:layout_below="@+id/editText"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@+id/editText"
+        android:layout_alignEnd="@+id/editText"
+        tools:textAllCaps="false"
+        android:onClick="onClickSendMsg"
+        />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btn2"
+        android:layout_below="@+id/btn2"
+        android:layout_marginTop="24dp"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btn3"
+        android:layout_below="@+id/btn3"
+        android:layout_marginTop="22dp"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btn4"
+        android:layout_below="@+id/btn4"
+        android:layout_marginTop="19dp"
+        android:text="Button" />
+
+</RelativeLayout>
