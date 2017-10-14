@@ -1,10 +1,12 @@
 package com.a3torstudio.intentionex;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -12,6 +14,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Intent intent = getIntent();
+        String backMessage = intent.getStringExtra("BackMessage");
+
+        TextView messageView = (TextView) findViewById(R.id.textBM);
+        messageView.setText(backMessage);
     }
 
     public void onClickNCA(View view){
@@ -25,6 +33,16 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,SendMessageActivity.class);
 
         intent.putExtra("message",textToSend);
+        startActivity(intent);
+    }
+    public void onClickReceiveMsg(View view){
+        Intent intent = new Intent(this,SendBackActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickOpenUrl(View view){
+        Uri url = Uri.parse("http://3tor.pl");
+        Intent intent = new Intent(Intent.ACTION_VIEW,url);
         startActivity(intent);
     }
 }

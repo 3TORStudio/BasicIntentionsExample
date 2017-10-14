@@ -36,7 +36,6 @@
         android:layout_marginTop="13dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Msg..."
         android:layout_below="@+id/btn1"
         android:layout_alignStart="@+id/btn1"
         android:layout_alignEnd="@+id/btn1" />
@@ -79,10 +78,13 @@
         android:id="@+id/btn4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        android:layout_alignBottom="@+id/btn5"
-        android:layout_alignStart="@+id/btn5"
-        android:layout_marginBottom="55dp" />
+        android:text="@string/btn4_text"
+        tools:textAllCaps="false"
+        android:onClick="onClickOpenUrl"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/textBM"
+        android:layout_alignStart="@+id/textBM"
+        android:layout_alignEnd="@+id/textBM" />
 
     <Button
         android:id="@+id/btn5"
