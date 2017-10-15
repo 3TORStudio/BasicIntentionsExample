@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,NCA.class);
         startActivity(intent);
     }
+
     public void onClickSendMsg(View view){
         EditText messegeView = (EditText) findViewById(R.id.editText);
         String textToSend = messegeView.getText().toString();
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra("message",textToSend);
         startActivity(intent);
     }
+
     public void onClickReceiveMsg(View view){
         Intent intent = new Intent(this,SendBackActivity.class);
         startActivity(intent);
@@ -43,6 +45,16 @@ public class MainActivity extends AppCompatActivity {
     public void onClickOpenUrl(View view){
         Uri url = Uri.parse("http://3tor.pl");
         Intent intent = new Intent(Intent.ACTION_VIEW,url);
+        startActivity(intent);
+    }
+
+    public void onClickSendSMS(View view){
+        EditText viewTextOfSms = (EditText)findViewById(R.id.smsText);
+        String textOfSms = viewTextOfSms.getText().toString();
+
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        intent.putExtra(Intent.EXTRA_TEXT,textOfSms);
         startActivity(intent);
     }
 }
