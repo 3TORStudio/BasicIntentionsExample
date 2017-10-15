@@ -55,6 +55,12 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/plain");
         intent.putExtra(Intent.EXTRA_TEXT,textOfSms);
-        startActivity(intent);
+
+        String chooserTitle = getString(R.string.choser);
+        Intent chosenIntent = Intent.createChooser(intent,chooserTitle);
+        startActivity(chosenIntent);
+
+        //startActivity(intent);
+
     }
 }
